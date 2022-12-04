@@ -15,13 +15,13 @@
 ## Kurulum
 * İlk olarak sql dosyasını Sql Server kullanarak çalıştırın.
 * Sonra da direkt programı verdiğim kullanıcı adı ve parola bilgileri ile açın.
-* İyi eğlenceler!
 
 ## Özellikleri
 * İstenilen kadar mahkum eklenebilir
 * Ziyaretçi kayıtları, İzin kayıtları, personel işlemleri, yoklama işlemleri gibi işlemler mevcut
 * Eklenen kullanıcılara neredeyse bütün işlemlerde yetki verme/alma işlemleri yapılabiliyor, hesaplar silinmeden aktifliği kaldırılabiliyor
-* Mahkumlar için resim eklenebiliyor
+* Mahkumlar için veritabanına resim eklenebiliyor
+* Koğuş Tipi, Görev Yeri vb. numaralandırılmış veri girişlerinde, yazıya tıklanılması halinde bir seçim menüsü açılacaktır, tek tek bakılmasına gerek yoktur
 
 ## Ek Açıklamalar
 * İlk c# projem olarak eksiklikleri olabilir.
@@ -30,3 +30,5 @@
 * Firma ekleme işlemi admin olarak değilde database admin tarafından yapılacağını düşünerek arayüz olarak eklemedim.
 * Zaten varsayılan olarak sql dosyasında bir firma ve kullanıcı ile birlikte gelecektir.
 * Kullanıcı adı: `admin` | Parola: `default_`
+
+#### İyi Eğlenceler!
