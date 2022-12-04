@@ -1,0 +1,428 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{01EF1580-6B1B-40AC-BDF7-BB07150079F1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CezaeviProgram</RootNamespace>
+    <AssemblyName>CezaeviProgram</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>CezaeviProgram.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AnaBolum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnaBolum.Designer.cs">
+      <DependentUpon>AnaBolum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AyarMenuleri\AyarMenusu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AyarMenuleri\AyarMenusu.Designer.cs">
+      <DependentUpon>AyarMenusu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AyarMenuleri\GorevYeriIslemleri\YerDuzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AyarMenuleri\GorevYeriIslemleri\YerDuzenle.Designer.cs">
+      <DependentUpon>YerDuzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AyarMenuleri\GorevYeriIslemleri\YerEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AyarMenuleri\GorevYeriIslemleri\YerEkle.Designer.cs">
+      <DependentUpon>YerEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AyarMenuleri\GorevYeriIslemleri\YerSorgu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AyarMenuleri\GorevYeriIslemleri\YerSorgu.Designer.cs">
+      <DependentUpon>YerSorgu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AyarMenuleri\KogusIslemleri\KogusDuzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AyarMenuleri\KogusIslemleri\KogusDuzenle.Designer.cs">
+      <DependentUpon>KogusDuzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AyarMenuleri\KogusIslemleri\KogusEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AyarMenuleri\KogusIslemleri\KogusEkle.Designer.cs">
+      <DependentUpon>KogusEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AyarMenuleri\KogusIslemleri\KogusSorgu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AyarMenuleri\KogusIslemleri\KogusSorgu.Designer.cs">
+      <DependentUpon>KogusSorgu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AyarMenuleri\KullaniciIslemleri\KullaniciDuzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AyarMenuleri\KullaniciIslemleri\KullaniciDuzenle.Designer.cs">
+      <DependentUpon>KullaniciDuzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AyarMenuleri\KullaniciIslemleri\KullaniciEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AyarMenuleri\KullaniciIslemleri\KullaniciEkle.Designer.cs">
+      <DependentUpon>KullaniciEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AyarMenuleri\KullaniciIslemleri\KullaniciSorgu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AyarMenuleri\KullaniciIslemleri\KullaniciSorgu.Designer.cs">
+      <DependentUpon>KullaniciSorgu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AyarMenuleri\PersonelTipIslemleri\TipDuzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AyarMenuleri\PersonelTipIslemleri\TipDuzenle.Designer.cs">
+      <DependentUpon>TipDuzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AyarMenuleri\PersonelTipIslemleri\TipEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AyarMenuleri\PersonelTipIslemleri\TipEkle.Designer.cs">
+      <DependentUpon>TipEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AyarMenuleri\PersonelTipIslemleri\TipSorgu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AyarMenuleri\PersonelTipIslemleri\TipSorgu.Designer.cs">
+      <DependentUpon>TipSorgu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AyarMenuleri\ZiyaretciOdaIslemleri\OdaDuzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AyarMenuleri\ZiyaretciOdaIslemleri\OdaDuzenle.Designer.cs">
+      <DependentUpon>OdaDuzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AyarMenuleri\ZiyaretciOdaIslemleri\OdaEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AyarMenuleri\ZiyaretciOdaIslemleri\OdaEkle.Designer.cs">
+      <DependentUpon>OdaEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AyarMenuleri\ZiyaretciOdaIslemleri\OdaSorgu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AyarMenuleri\ZiyaretciOdaIslemleri\OdaSorgu.Designer.cs">
+      <DependentUpon>OdaSorgu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Giris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Giris.Designer.cs">
+      <DependentUpon>Giris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IzinIslemleri\IzinDuzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IzinIslemleri\IzinDuzenle.Designer.cs">
+      <DependentUpon>IzinDuzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IzinIslemleri\IzinEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IzinIslemleri\IzinEkle.Designer.cs">
+      <DependentUpon>IzinEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IzinIslemleri\IzinSorgu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IzinIslemleri\IzinSorgu.Designer.cs">
+      <DependentUpon>IzinSorgu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MahkumIslemleri\MahkumDuzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MahkumIslemleri\MahkumDuzenle.Designer.cs">
+      <DependentUpon>MahkumDuzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MahkumIslemleri\MahkumEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MahkumIslemleri\MahkumEkle.Designer.cs">
+      <DependentUpon>MahkumEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MiniSecimMenuleri\MahkumKogusBilgilendirme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MiniSecimMenuleri\MahkumKogusBilgilendirme.Designer.cs">
+      <DependentUpon>MahkumKogusBilgilendirme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MiniSecimMenuleri\GorevYeriBilgilendirme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MiniSecimMenuleri\GorevYeriBilgilendirme.Designer.cs">
+      <DependentUpon>GorevYeriBilgilendirme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonelIslemleri\PersonelDuzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonelIslemleri\PersonelDuzenle.Designer.cs">
+      <DependentUpon>PersonelDuzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonelIslemleri\PersonelEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonelIslemleri\PersonelEkle.Designer.cs">
+      <DependentUpon>PersonelEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonelIslemleri\PersonelSorgu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonelIslemleri\PersonelSorgu.Designer.cs">
+      <DependentUpon>PersonelSorgu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MiniSecimMenuleri\PersonelTipBilgilendirme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MiniSecimMenuleri\PersonelTipBilgilendirme.Designer.cs">
+      <DependentUpon>PersonelTipBilgilendirme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="YoklamaIslemleri\YoklamaKayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YoklamaIslemleri\YoklamaKayit.Designer.cs">
+      <DependentUpon>YoklamaKayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YoklamaIslemleri\YoklamaSorgu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YoklamaIslemleri\YoklamaSorgu.Designer.cs">
+      <DependentUpon>YoklamaSorgu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ZiyaretciIslemleri\ZiyaretciDuzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ZiyaretciIslemleri\ZiyaretciDuzenle.Designer.cs">
+      <DependentUpon>ZiyaretciDuzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ZiyaretciIslemleri\ZiyaretciEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ZiyaretciIslemleri\ZiyaretciEkle.Designer.cs">
+      <DependentUpon>ZiyaretciEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ZiyaretciIslemleri\ZiyaretciSorgu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ZiyaretciIslemleri\ZiyaretciSorgu.Designer.cs">
+      <DependentUpon>ZiyaretciSorgu.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AnaBolum.resx">
+      <DependentUpon>AnaBolum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AyarMenuleri\AyarMenusu.resx">
+      <DependentUpon>AyarMenusu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AyarMenuleri\GorevYeriIslemleri\YerDuzenle.resx">
+      <DependentUpon>YerDuzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AyarMenuleri\GorevYeriIslemleri\YerEkle.resx">
+      <DependentUpon>YerEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AyarMenuleri\GorevYeriIslemleri\YerSorgu.resx">
+      <DependentUpon>YerSorgu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AyarMenuleri\KogusIslemleri\KogusDuzenle.resx">
+      <DependentUpon>KogusDuzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AyarMenuleri\KogusIslemleri\KogusEkle.resx">
+      <DependentUpon>KogusEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AyarMenuleri\KogusIslemleri\KogusSorgu.resx">
+      <DependentUpon>KogusSorgu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AyarMenuleri\KullaniciIslemleri\KullaniciDuzenle.resx">
+      <DependentUpon>KullaniciDuzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AyarMenuleri\KullaniciIslemleri\KullaniciEkle.resx">
+      <DependentUpon>KullaniciEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AyarMenuleri\KullaniciIslemleri\KullaniciSorgu.resx">
+      <DependentUpon>KullaniciSorgu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AyarMenuleri\PersonelTipIslemleri\TipDuzenle.resx">
+      <DependentUpon>TipDuzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AyarMenuleri\PersonelTipIslemleri\TipEkle.resx">
+      <DependentUpon>TipEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AyarMenuleri\PersonelTipIslemleri\TipSorgu.resx">
+      <DependentUpon>TipSorgu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AyarMenuleri\ZiyaretciOdaIslemleri\OdaDuzenle.resx">
+      <DependentUpon>OdaDuzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AyarMenuleri\ZiyaretciOdaIslemleri\OdaEkle.resx">
+      <DependentUpon>OdaEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AyarMenuleri\ZiyaretciOdaIslemleri\OdaSorgu.resx">
+      <DependentUpon>OdaSorgu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Giris.resx">
+      <DependentUpon>Giris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IzinIslemleri\IzinDuzenle.resx">
+      <DependentUpon>IzinDuzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IzinIslemleri\IzinEkle.resx">
+      <DependentUpon>IzinEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IzinIslemleri\IzinSorgu.resx">
+      <DependentUpon>IzinSorgu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MahkumIslemleri\MahkumDuzenle.resx">
+      <DependentUpon>MahkumDuzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MahkumIslemleri\MahkumEkle.resx">
+      <DependentUpon>MahkumEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MiniSecimMenuleri\MahkumKogusBilgilendirme.resx">
+      <DependentUpon>MahkumKogusBilgilendirme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MiniSecimMenuleri\GorevYeriBilgilendirme.resx">
+      <DependentUpon>GorevYeriBilgilendirme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonelIslemleri\PersonelDuzenle.resx">
+      <DependentUpon>PersonelDuzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonelIslemleri\PersonelEkle.resx">
+      <DependentUpon>PersonelEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonelIslemleri\PersonelSorgu.resx">
+      <DependentUpon>PersonelSorgu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MiniSecimMenuleri\PersonelTipBilgilendirme.resx">
+      <DependentUpon>PersonelTipBilgilendirme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="YoklamaIslemleri\YoklamaKayit.resx">
+      <DependentUpon>YoklamaKayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YoklamaIslemleri\YoklamaSorgu.resx">
+      <DependentUpon>YoklamaSorgu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ZiyaretciIslemleri\ZiyaretciDuzenle.resx">
+      <DependentUpon>ZiyaretciDuzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ZiyaretciIslemleri\ZiyaretciEkle.resx">
+      <DependentUpon>ZiyaretciEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ZiyaretciIslemleri\ZiyaretciSorgu.resx">
+      <DependentUpon>ZiyaretciSorgu.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ikonlar\ayarlar.png" />
+    <Content Include="ikonlar\ayar_w.png" />
+    <Content Include="ikonlar\calistir.png" />
+    <Content Include="ikonlar\cikis.png" />
+    <Content Include="ikonlar\ekle.png" />
+    <Content Include="ikonlar\izin.png" />
+    <Content Include="ikonlar\kaydet.png" />
+    <Content Include="ikonlar\kilitAc.png" />
+    <Content Include="ikonlar\kilitEkrani.png" />
+    <Content Include="ikonlar\mahkum.png" />
+    <Content Include="ikonlar\ok.png" />
+    <Content Include="ikonlar\personel.png" />
+    <Content Include="ikonlar\sil.png" />
+    <Content Include="ikonlar\yoklama.png" />
+    <Content Include="ikonlar\ziyaretci.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
