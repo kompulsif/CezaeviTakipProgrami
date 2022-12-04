@@ -3,13 +3,13 @@
 ## Resimler
 
 <p align="center">
-  <img src="">
+  <img src="https://github.com/kompulsif/CezaeviTakipProgrami/blob/main/ReadmeImages/anabolum.png">
 </p>
 <p align="center">
-  <img src="">
+  <img src="https://github.com/kompulsif/CezaeviTakipProgrami/blob/main/ReadmeImages/kullanici_ayarlari.png">
 </p>
 <p align="center">
-<img src="">
+<img src="https://github.com/kompulsif/CezaeviTakipProgrami/blob/main/ReadmeImages/giris.png">
 </p>
 
 ## Kurulum
