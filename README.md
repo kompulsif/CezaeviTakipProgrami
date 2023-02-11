@@ -24,9 +24,7 @@
 * Koğuş Tipi, Görev Yeri vb. numaralandırılmış veri girişlerinde, yazıya tıklanılması halinde bir seçim menüsü açılacaktır, tek tek bakılmasına gerek yoktur
 
 ## Ek Açıklamalar
-* İlk c# projem olarak eksiklikleri olabilir.
-* C# bilmeyerek, araştırarak yapıldı bundan kaynaklı olarak bazen saçma gelen fazla kodlar da görebilirsiniz :D
-* Çalışıyorsa dokunma mantığıyla ilerledim biraz şimdiden kb .d
+* İlk c# projem olarak eksiklikleri olabilir. Bunu bana bildirebilirsiniz.
 * Firma ekleme işlemi admin olarak değilde database admin tarafından yapılacağını düşünerek arayüz olarak eklemedim.
 * Zaten varsayılan olarak sql dosyasında bir firma ve kullanıcı ile birlikte gelecektir.
 * Kullanıcı adı: `admin` | Parola: `default_`
